@@ -4,7 +4,7 @@ Yet another Northstar mod that converts Pilot and Titan hitscan weapons to proje
 Key differencies:
 - Uses keyvalue patching instead of replacing weapon scripts to improve compability with other mods.
 - Doesn't crash client when AI Titan or NPC is shooting.
-- AI Titans or NPCs have muzzleflash and shoot sound.
+- AI Titans and NPCs have muzzleflash and shoot sound.
 - Unique velocity and gravity drop for each converted weapon.
 
 | Weapon  | Projectile velocity | Projectile gravity |
