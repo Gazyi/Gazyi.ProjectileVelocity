@@ -36,3 +36,4 @@ TODO:
 
 Issues:
 - Smart Pistol spawns explosion effects on impact (Probably because it uses "homing_missile" type of smart ammuntion).
+- Smart Pistol has problems with hitting NPCs in stagger animations.
