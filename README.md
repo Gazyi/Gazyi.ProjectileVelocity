@@ -1,5 +1,5 @@
 # Gazyi.ProjectileVelocity
-Yet another Northstar mod that converts Pilot and Titan hitscan weapons to projectiles. Inspired by [**Daar375's hitscan to projectile mod**](https://github.com/Daar375/Daar375ModularBalancePatch/tree/main/Daar375.HitscanToProjectile).
+Yet another Northstar mod that converts Pilot and Titan hitscan weapons to projectiles (with exception of Charge Rifle, Laser Shot and Laser Core). Inspired by [**Daar375's hitscan to projectile mod**](https://github.com/Daar375/Daar375ModularBalancePatch/tree/main/Daar375.HitscanToProjectile).
 
 Key differencies:
 - Uses keyvalue patching instead of replacing weapon scripts to improve compability with other mods.
