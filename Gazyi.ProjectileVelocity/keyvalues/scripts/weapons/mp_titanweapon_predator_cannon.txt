@@ -1,0 +1,65 @@
+WeaponData
+{
+	// Effects
+	"tracer_effect"   								""
+	"tracer_effect_first_person"  						""
+
+	// Projectile implementation
+	"OnWeaponActivate"								"OnWeaponActivate_titanweapon_predator_cannon_proj"
+	"OnWeaponPrimaryAttack"							"OnWeaponPrimaryAttack_titanweapon_predator_cannon_proj"
+	"OnWeaponNpcPrimaryAttack"							"OnWeaponNpcPrimaryAttack_titanweapon_predator_cannon_proj"
+	
+	// Network optimisation is disabled, otherwise 3rd person effects and sounds don't play.
+	"net_optimize"		                            "0"
+	
+	// Model for long power shot projectile is set in VScript.
+	//"projectilemodel" 								"models/weapons/bullets/projectile_40mm.mdl"
+	
+	// Bolt speed for primary attack and smart ammo core
+	"bolt_speed" 									"12000"
+	"projectile_trail_effect_0" 						"weapon_kraber_projectile"
+	"projectile_do_predict_impact_effects"				"1"
+	
+	"projectilemodel" 								"models/weapons/bullets/projectile_20mm.mdl"
+	"bolt_hitsize"									"4.0"
+	"bolt_gravity_enabled"							"1"
+	"bolt_gravity_amount" 							"0.25"
+	
+	"pass_through_depth"								"0"
+	"pass_through_damage_preserved_scale"				"1.0"
+	
+	"bolt_bounce_frac"								"0.000"
+	"projectile_damages_owner"							"0"
+	"projectile_ricochet_max_count"					"0"
+	//End of Projectile implementation
+	
+	Mods
+	{
+		LongRangeAmmo
+		{
+			"tracer_effect"   								""
+			"tracer_effect_first_person"  						""
+		}
+		Smart_Core
+		{		
+			"smart_ammo_weapon_type"						"homing_missile"
+		}
+		CloseRangePowerShot
+		{
+			"tracer_effect"   								""
+			"projectile_trail_effect_0" 						"P_leadwall_proj" //"P_mastiff_proj_amp"
+
+			// That makes every projectile do 2000 damage to titan, while it should do 2000 damage in sum.
+			//"damage_near_value_titanarmor"					"2000"
+			//"damage_far_value_titanarmor"					"2000"
+			// It spawns 12 projectiles.
+			"damage_near_value_titanarmor"						"166"
+			"damage_far_value_titanarmor"						"166"
+			// End of projectile implementation
+		}
+		LongRangePowerShot
+		{
+			"bolt_hitsize"									"12.0"
+		}
+	}
+}

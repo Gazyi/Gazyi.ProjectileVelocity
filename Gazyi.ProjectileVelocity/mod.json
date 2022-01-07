@@ -1,0 +1,25 @@
+{
+	"ApiId" : "Gazyi.ProjectileVelocity",
+	"Name": "Hitscan to Projectile Conversion",
+	"Description": "Converts all Pilot and Titan hitscan weapons to projectiles, except Charge Rifle, Laser Shot and Laser Core",
+  	"RequiredOnClient": true,
+	"Version": "1.0.0",
+	"Authors": ["Gazyi"],
+	"LoadPriority": 2,
+	
+	"Scripts":
+	[
+		{
+			"Path": "weapons/mp_weapon_shotgun_proj.nut",
+			"RunOn": "( CLIENT || SERVER ) && MP"
+		},
+		{
+			"Path": "weapons/mp_weapon_smart_pistol_proj.nut",
+			"RunOn": "( CLIENT || SERVER ) && MP"
+		},
+		{
+			"Path": "weapons/mp_titanweapon_predator_cannon_proj.nut",
+			"RunOn": "( CLIENT || SERVER ) && MP"
+		}
+	]
+}

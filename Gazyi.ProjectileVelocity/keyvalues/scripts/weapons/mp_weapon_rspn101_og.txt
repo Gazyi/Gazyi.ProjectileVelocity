@@ -1,0 +1,52 @@
+WeaponData
+{
+	// Effects
+	"tracer_effect_first_person"                    	""
+	"tracer_effect"   								""
+
+	// Network optimisation is disabled, otherwise 3rd person effects and sounds don't play.
+	"net_optimize"		                            "0"	
+	
+	// Projectile implementation
+	"OnWeaponPrimaryAttack"							"OnWeaponPrimaryAttack_weapon_sniper"
+	"OnWeaponNpcPrimaryAttack"							"OnWeaponNpcPrimaryAttack_weapon_sniper"
+	"OnProjectileCollision"							"OnProjectileCollision_weapon_sniper"
+
+	"projectilemodel" 								"models/weapons/bullets/bullet_rifle.mdl"
+
+	"projectile_trail_effect_0" 						"garand_trail_smoke"
+	"projectile_do_predict_impact_effects"				"1"
+	
+	"bolt_hitsize"									"0.0"
+	"bolt_gravity_enabled"							"1"
+	"bolt_gravity_amount" 							"0.23"
+	
+	"pass_through_depth"								"0"
+	"pass_through_damage_preserved_scale"				"0.5"
+
+	"bolt_bounce_frac"								"0.000"
+	"projectile_damages_owner"							"0"
+	"projectile_ricochet_max_count"					"0"
+
+	"bolt_speed" 									"9830"
+	//End of Projectile implementation
+	
+	MP_BASE
+	{
+		"damage_flags"									"DF_BULLET | DF_DISMEMBERMENT"
+	}
+
+	Mods
+	{
+		burn_mod_rspn101
+		{
+			//FX
+			"tracer_effect"   								""
+			"tracer_effect_first_person"                    	""
+			
+			// Projectile trail effect
+			"projectile_trail_effect_0" 						"P_mastiff_proj_amp"
+			// End of projectile implementation
+		}
+	}
+}
