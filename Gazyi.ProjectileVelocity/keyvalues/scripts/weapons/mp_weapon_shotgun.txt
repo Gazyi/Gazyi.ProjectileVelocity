@@ -40,6 +40,21 @@ WeaponData
 	"bolt_speed" 									"5425"
 	//End of Projectile implementation
 
+	MP_BASE
+	{
+		// Damage - When Used by Players
+		// That makes every projectile do 200 damage, while it should do 200 damage in sum. 
+		// Will it make damage more RNG?
+		//"damage_near_value"   						"200"
+		//"damage_near_value_titanarmor"				"300"
+		// Shotgun spawns 8 projectiles.
+		"damage_near_value"   							"25"
+		"damage_near_value_titanarmor"						"38"
+		// That value is still used when classic rodeo is enabled.
+		// "damage_rodeo" 								"550"
+		"damage_rodeo" 									"69"
+	}
+	
 	Mods
 	{
 		burn_mod_shotgun
@@ -49,6 +64,11 @@ WeaponData
 			// Projectile trail effect
 			"projectile_trail_effect_0" 						"P_mastiff_proj_amp"
 			// End of projectile implementation
+			
+			//"damage_near_value"   							"250" //~32x8
+			//"damage_near_value_titanarmor"					"400" //50x8
+			"damage_near_value"   								"++7"
+			"damage_near_value_titanarmor"							"++12"
 		}
 	}
 }

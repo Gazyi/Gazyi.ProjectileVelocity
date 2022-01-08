@@ -3,7 +3,7 @@
 	"Name": "Hitscan to Projectile Conversion",
 	"Description": "Converts all Pilot and Titan hitscan weapons to projectiles, except Charge Rifle, Laser Shot and Laser Core",
   	"RequiredOnClient": true,
-	"Version": "1.0.0",
+	"Version": "1.0.1",
 	"Authors": ["Gazyi"],
 	"LoadPriority": 2,
 	
